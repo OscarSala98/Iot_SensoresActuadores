@@ -1,6 +1,6 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
-#include <Wire.h>             // <--- AGREGADO PARA I2C
+#include <Wire.h>             
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <OneWire.h>
@@ -9,9 +9,9 @@
 // =========================================================
 // ==================== CREDENCIALES WIFI ==================
 // =========================================================
-const char* ssid = "MATHEW_LAP 2899";  // <--- TU WIFI
-const char* password = "50X&272g";     // <--- TU CONTRASEÑA
-String serverIP = "10.183.54.122";    // <--- IP DE TU PC/SERVIDOR
+const char* ssid = "MATHEW_LAP 2899";  // <--- SSID WIFI
+const char* password = "50X&272g";     // <--- CONTRASEÑA
+String serverIP = "10.183.54.122";    // <--- IP SERVIDOR
 int serverPort = 5000;
 
 // =========================================================
@@ -26,7 +26,7 @@ int serverPort = 5000;
 #define PIN_DS18B20       15
 #define PIN_LDR           34
 
-// --- OLED I2C (CONFIGURACIÓN MODIFICADA) ---
+
 // Pines por defecto ESP32: SDA = GPIO 21, SCL = GPIO 22
 #define OLED_RESET     -1      // Reset compartido con VCC o no usado (-1)
 #define SCREEN_ADDRESS 0x3C    // Dirección I2C (0x3C o 0x3D)
