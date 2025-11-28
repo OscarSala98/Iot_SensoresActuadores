@@ -1,4 +1,4 @@
-# 🐾 Sistema IoT Pet (Server Based) v3.0
+# 🐾 Sistema IoT Pet (Server Based) 
 
 Este proyecto implementa un sistema inteligente de dispensación de alimentos/agua para mascotas, utilizando un microcontrolador **ESP32** para monitorear el ambiente y la presencia de animales, y comunicarse con un **servidor externo** (probablemente con IA o lógica de control) para determinar la acción a tomar.
 
