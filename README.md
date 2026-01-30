@@ -2,6 +2,26 @@
 
 Este proyecto implementa un sistema inteligente de dispensación de alimentos/agua para mascotas, utilizando un microcontrolador **ESP32** para monitorear el ambiente y la presencia de animales, y comunicarse con un **servidor externo** (probablemente con IA o lógica de control) para determinar la acción a tomar.
 
+---
+
+## 📁 Estructura del Proyecto
+
+| Archivo | Descripción | Estado |
+| :--- | :--- | :---: |
+| **`SensoresPET.ino`** | **🔴 ARCHIVO PRINCIPAL** - Versión optimizada y unificada del sistema (v4.0). Incluye telemetría unificada cada 2 segundos, sensor de nivel de agua y código más limpio. | ⭐ Principal |
+| `SensoresActuadores_I2C.ino` | Versión anterior del sistema (v3.0). Contiene la implementación base con calibración dinámica de luz. Útil como referencia. | 📦 Legado |
+| `README.md` | Documentación del proyecto. | 📄 Docs |
+
+### Diferencias principales entre versiones:
+
+| Característica | `SensoresPET.ino` (v4.0) | `SensoresActuadores_I2C.ino` (v3.0) |
+| :--- | :--- | :--- |
+| Telemetría | ✅ Unificada (cada 2s) | ❌ No incluida |
+| Sensor de Nivel | ✅ GPIO 5 | ❌ No soportado |
+| Velocidad dispensado | 20 mL/s configurable | No especificado |
+| Brown-out Disable | ❌ No necesario | ✅ Incluido |
+
+> **💡 Recomendación:** Usar `SensoresPET.ino` para nuevas implementaciones.
 
 ---
 
