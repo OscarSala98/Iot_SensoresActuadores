@@ -11,9 +11,9 @@
 // =========================================================
 // ==================== CREDENCIALES WIFI ==================
 // =========================================================
-const char* ssid = "MATHEW_LAP 2899";  // <--- SSID WIFI
-const char* password = "50X&272g";     // <--- CONTRASEÑA
-String serverIP = "192.168.31.48";    // <--- IP SERVIDOR
+const char* ssid = "MATHEW_LAP 2899";  // <--- TU WIFI
+const char* password = "50X&272g";     // <--- TU CONTRASEÑA
+String serverIP = "10.183.54.122";    // <--- IP DE TU PC/SERVIDOR
 int serverPort = 5000;
 
 // =========================================================
